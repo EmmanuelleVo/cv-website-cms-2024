@@ -7,6 +7,9 @@ export const structure = (S) =>
       .id('root')
       .title('Content')
       .items([
+        S.documentTypeListItem('page').title('Pages'),
+        S.divider(),
+
         S.documentTypeListItem('article').title('Articles').icon(CalendarIcon),
         S.documentTypeListItem('articleCategory').title('Article categories').icon(TagIcon),
         S.listItem()

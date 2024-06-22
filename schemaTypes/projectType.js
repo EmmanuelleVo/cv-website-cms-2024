@@ -6,8 +6,22 @@ export const projectType = defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'title',
+      name: 'name',
       type: 'string',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'description',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'link',
+      title: 'Link',
+      type: 'link',
+      options: {
+          enableText: true
+        }
     }),
   ],
 })
