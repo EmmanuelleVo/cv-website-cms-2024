@@ -78,6 +78,15 @@ export const homePage = {
         validation: (Rule) => Rule.required(),
       }),
       defineField({
+        name: 'section_4_image',
+        title: 'Image',
+        type: 'image',
+        group: 'section_4',
+        options: {
+          hotspot: true,
+        },
+      }),
+      defineField({
         name: 'competences',
         title: 'What I Do',
         type: 'array',
